@@ -4,50 +4,114 @@
     padding: 0;
 }
 
-header{
-    background-color: rgb(65, 65, 65);
+body {
     box-sizing: border-box;
+  
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    z-index: 1000; /* Mantém acima de outros elementos */
 }
 
 .topbar{
-    
+    padding: 25px;
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: center;
+    gap: 500px;
 }
 .logo{
-    color: #ffffff;
+    color: #2c2c2c;
     font-family: "Montserrat", serif;
     font-weight: 600;
-    margin: 0 0 0 27%;
     display: flex;
     justify-content: space-between;
     font-size: 22px;
 }
 
 .menu {
-    
     font-family: "Montserrat", serif;
-    margin: 0 27% 0 0;
+    gap: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+.menu a{
+    text-decoration: none;          
+    font-size: 18px; 
+    font-weight: 600;       
+    color: #2c2c2c; /* Cor inicial */
+    transition: color 0.5s ease;
+}
 
-.menu__link{
-    
-    padding: 15px 20px;
+.menu a:hover, 
+.menu a.active{
+    color: red;    
     text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
 }
 
-.menu__link:hover{
+.content {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity; /* Faz o snap vertical obrigatório */
+}
+
+/* Seções */
+section {
+    height: 100vh; /* Ocupa a tela toda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    scroll-snap-align: start; /* Cada seção será um ponto de parada */
+}
+
+.img1{
+    width: 100%;
+}
+
+.content__inicio__texto{
+    background-color: rgba(0, 0, 0, 0.2);
     
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #ff0000;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 11.5%;
+    
+
+}
+
+#inicio { background-image: url('/assets/img/01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
+
+.inicio__titulo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f6f6f6;
+    text-shadow: 2px 2px #000;
+    margin-left: 24%;
+}
+.inicio__paragrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #f6f6f6;
+    text-shadow: 2px 2px #000;
+    margin-left: 24%;
+}
+#about { background-color: #444; }
+#portfolio { background-color: #555; }
+#contato { background-color: #666; }
