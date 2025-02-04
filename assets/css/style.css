@@ -120,15 +120,26 @@ section {
 
 
 @media (max-width:1200px){
+    
     .topbar{
         flex-direction: column;
         gap:10px;
         padding: 0;
     }
+    
     .menu{
         gap:10px;
     }
+
+    .inicio__titulo{
+        margin-left: 8%;
+    }
+    
     #inicio {
         background-position: center;
+    }
+
+    .inicio__paragrafo{
+        margin-left: 8%;
     }
 }
