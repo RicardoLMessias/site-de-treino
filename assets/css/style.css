@@ -62,7 +62,6 @@ header{
 }
 
 .content {
-    
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y proximity; /* Faz o snap vertical obrigatório */
@@ -237,7 +236,7 @@ section {
         gap: 0;
     }
     .about__img{
-        max-width: 45%;
+        max-width: 0%;
     }
 
     .about__conteudo{
