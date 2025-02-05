@@ -188,7 +188,8 @@ section {
 #portfolio { 
     background-color: #fff; 
     display: grid;
-    grid-template-columns: repeat(4, 200px); 
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 180px); 
     gap: 20px; 
     padding: 0;
     height: 100vh;
@@ -291,6 +292,12 @@ section {
 
     /* pagina portfolio */
     #portfolio{
-        grid-template-columns: repeat(2, 200px); /* 4 colunas de tamanhos iguais */ 
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(4, 80px); 
+    }
+    .portfolio__botao{
+       
+        line-height: 80px; 
+       
     }
 }
