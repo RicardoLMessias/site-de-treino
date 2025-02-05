@@ -62,7 +62,7 @@ header{
 }
 
 .content {
-    padding-top: 90px;
+    
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y proximity; /* Faz o snap vertical obrigatório */
@@ -70,7 +70,7 @@ header{
 
 /* Seções */
 section {
-    scroll-margin-top: 90px;
+    
     min-height: 100vh;
     width: 100%; /* Ocupa a tela toda */
     display: flex;
@@ -200,12 +200,7 @@ section {
 
 
 @media (max-width:1200px){
-    .content {
-        padding-top: 84px;
-    }
-    section {
-        scroll-margin-top: 84px;
-    }
+    
 
     
     .topbar{
