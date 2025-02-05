@@ -62,6 +62,7 @@ header{
 }
 
 .content {
+    padding-top: 90px;
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y proximity; /* Faz o snap vertical obrigatório */
@@ -69,14 +70,12 @@ header{
 
 /* Seções */
 section {
+    scroll-margin-top: 90px;
     min-height: 100vh;
     width: 100%; /* Ocupa a tela toda */
     display: flex;
     align-items: center;
     justify-content:center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
     scroll-snap-align: start; /* Cada seção será um ponto de parada */
 }
 
@@ -95,8 +94,9 @@ section {
 
 
 #inicio { 
+
     background-image: url('/assets/img/01.jpg');
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
     
@@ -130,14 +130,13 @@ section {
 
 .about__img{
     max-width: 25%;
-    max-height: 70%;
     
 }
 
 .img2{
     max-width: 100%;
     max-height: 100%;
-    border-radius: 2000px;
+    border-radius: 1000px;
     box-shadow: 0 0 3px  rgba(0, 0, 0, 0.5);
 }
 
@@ -162,8 +161,6 @@ section {
     font-weight: 400;
     color:#2c2c2c;
     line-height: 2rem;
-    
-    
 }
 
 .about__botao{
@@ -182,15 +179,18 @@ section {
     width: 30%;
     border-radius: 5px;
     border: 2px solid white;
-    transition: color 0.2s  ease;
-    transition: background-color 0.2s ease;
-    transition: border 0.2s ease;
+    transition: color 0.5s  ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
 }
 
 .about__botao:hover{
     background-color: white;
     color: red;
     border: 2px solid red;
+    transition: color 0.5s  ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
 
 }
 
@@ -200,6 +200,13 @@ section {
 
 
 @media (max-width:1200px){
+    .content {
+        padding-top: 84px;
+    }
+    section {
+        scroll-margin-top: 24px;
+    }
+
     
     .topbar{
         flex-direction: column;
@@ -211,12 +218,15 @@ section {
         gap:10px;
     }
 
+
+
     .inicio__titulo{
         margin-left: 8%;
     }
     
     #inicio {
         background-position: center;
+        background-size: cover;
     }
 
     .inicio__paragrafo{
@@ -224,5 +234,23 @@ section {
     }
 
 
-    
+
+    #about{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    .about__img{
+        max-width: 45%;
+    }
+
+    .about__conteudo{
+        width: 90%;
+        height: 100%;    
+    }
+    .about__paragrafo {
+        margin-top: 3%;
+}
+
 }
