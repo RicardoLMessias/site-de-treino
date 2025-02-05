@@ -96,7 +96,7 @@ section {
 #inicio { 
 
     background-image: url('/assets/img/01.jpg');
-    background-size:contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
