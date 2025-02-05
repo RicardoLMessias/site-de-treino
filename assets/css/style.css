@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -79,27 +80,20 @@ section {
 }
 
 
-
+/*inicio*/
 .content__inicio__texto{
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 11.5%;
-    
-
 }
 
-
-
 #inicio { 
-
     background-image: url('/assets/img/01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
-    
 }
 
 .inicio__titulo{
@@ -110,6 +104,7 @@ section {
     text-shadow: 2px 2px #000;
     margin-left: 24%;
 }
+
 .inicio__paragrafo{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
@@ -119,12 +114,13 @@ section {
     margin-left: 24%;
 }
 
-
+/*sobre mim*/
 #about { 
     display:flex;
     gap: 100px;
     justify-content: center;
     width: 100%;
+    height: 100%;
  }
 
 .about__img{
@@ -141,7 +137,7 @@ section {
 
 .about__conteudo{
     width: 25%;
-    height: 50%;    
+    height: 50%;
 }
 
 .about__titulo {
@@ -159,7 +155,7 @@ section {
     font-size: 1.125rem;
     font-weight: 400;
     color:#2c2c2c;
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 .about__botao{
@@ -175,33 +171,79 @@ section {
     color: white;
     text-decoration: none;
     text-align: center;
-    width: 30%;
+    width: 40%;
     border-radius: 5px;
     border: 2px solid white;
-    transition: color 0.5s  ease-in-out;
-    transition: background-color 0.5s ease-in-out;
-    transition: border 0.5s ease-in-out;
+    transition: color 0.5s  ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 
 .about__botao:hover{
     background-color: white;
     color: red;
     border: 2px solid red;
-    transition: color 0.5s  ease-in-out;
-    transition: background-color 0.5s ease-in-out;
-    transition: border 0.5s ease-in-out;
+    
 
 }
 
-#portfolio { background-color: #555; }
-#contato { background-color: #666; }
+#portfolio { 
+    background-color: #fff; 
+    display: grid;
+    grid-template-columns: repeat(4, 200px); 
+    gap: 20px; 
+    padding: 0;
+    height: 100vh;
+    align-content: center; 
+}
+
+.portfolio__content{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.portfolio__botao{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 180px; /* Centraliza o texto */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+.portfolio__botao:hover{
+    transform: scale(1.2); /* Aumenta 10% */
+    background-color: red; /* Muda a cor ao passar o mouse */
+}
+
+
+
+
+#contato { 
+    width: 100%;
+    display: flex;
+    background-color: #666; 
+}
+
+
+
 
 
 
 @media (max-width:1200px){
-    
-
-    
+    /* menu */
     .topbar{
         flex-direction: column;
         gap:10px;
@@ -213,7 +255,7 @@ section {
     }
 
 
-
+    /* pagina inicio  */
     .inicio__titulo{
         margin-left: 8%;
     }
@@ -228,7 +270,7 @@ section {
     }
 
 
-
+    /* pagina about */
     #about{
         margin: 0;
         padding: 0;
@@ -241,10 +283,14 @@ section {
 
     .about__conteudo{
         width: 90%;
-        height: 100%;    
+        height: 50%;    
     }
     .about__paragrafo {
-        margin-top: 3%;
+        margin-top: 9%;
 }
 
+    /* pagina portfolio */
+    #portfolio{
+        grid-template-columns: repeat(2, 200px); /* 4 colunas de tamanhos iguais */ 
+    }
 }
