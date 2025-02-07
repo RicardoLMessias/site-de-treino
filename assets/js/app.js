@@ -40,3 +40,45 @@ let observer = new IntersectionObserver(entries => {
         targetSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+//BOTAO 1
+document.querySelector("a[href='#job1']").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("job1").style.display = "flex";
+});
+
+document.querySelector(".close1").addEventListener("click", function() {
+    document.getElementById("job1").style.display = "none";
+});
+
+//BOTAO 2
+document.querySelector("a[href='#job2']").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("job2").style.display = "flex";
+});
+
+document.querySelector(".close2").addEventListener("click", function() {
+    document.getElementById("job2").style.display = "none";
+});
+
+//BOTAO 3
+document.querySelector("a[href='#job3']").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("job3").style.display = "flex";
+});
+
+document.querySelector(".close3").addEventListener("click", function() {
+    document.getElementById("job3").style.display = "none";
+});
+
+//BOTAO 4
+document.querySelector("a[href='#job4']").addEventListener("click", function(event) {
+    event.preventDefault();
+    
+    document.getElementById("job4").style.display = "flex";
+});
+
+document.querySelector(".close4").addEventListener("click", function() {
+        document.getElementById("job4").style.display = "none";
+});
+
