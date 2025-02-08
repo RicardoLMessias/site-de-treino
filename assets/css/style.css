@@ -287,6 +287,7 @@ section {
     border: 2px solid red;
     border-radius: 200px;
     margin-bottom: 10px;
+    transition: color 0.1s  ease-in-out, background-color 0.1s ease-in-out, border 0.1s ease-in-out;
 } 
 
 .modal-content__rodape{
@@ -313,6 +314,12 @@ section {
     padding: 10px;
     background-color: red;
     
+}
+
+.close1:hover, .close2:hover, .close3:hover, .close4:hover{
+    background-color: red;
+    border: 2px solid white;
+    color: white;
 }
 
 /* .modal {
