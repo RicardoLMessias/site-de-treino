@@ -100,10 +100,48 @@
 
 
             <section id="contato">
-                Contato
+                <div class="contato__content">
+                    <div class="contato__content__corpo">
+                        <div class="contato__content__esquerdo">
+                            <div class="contato__content__esquerdo__texto">
+                                <h1>ENTRE EM <strong>CONTATO</strong></h1>
+                                <h2>Por favor, preencha o formulário nesta seção para entrar em contato comigo. Ou ligue entre 9:00 e 20:00 ET, de segunda a sexta-feira</h2>
+                                <h2><strong>E-mail: </strong>ricardo.lima.messias@gmail.com</h2>
+                                <h2><strong>Telefone: </strong>+55 (11) 95930-4112</h2>
+                            </div>
+                                <a class="contato__content__esquerdo__redes" href="https://www.linkedin.com/in/ricardolimamessias-java/" target="_blank">
+                                    <img src="assets/img/icons8-linkedin-25.png" alt="logo github">
+                                    Linkedin
+                                </a>
+                                <a class="contato__content__esquerdo__redes" href="https://github.com/RicardoLMessias" target="_blank">
+                                    <img src="assets/img/icons8-github-25.png" alt="logo github">
+                                    Github
+                                </a>
+                                <a class="contato__content__esquerdo__redes" href="https://www.twitch.tv/srofdark" target="_blank">
+                                    <img src="assets/img/icons8-twitch-25.png" alt="logo twitch">
+                                    Twitch
+                                </a>
+                        </div>
+                        
+                        
+                        
+                        <div class="contato__content__direito">
+                            <form action="processar_email.php" method="POST">
+                                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                                <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+
+                                <button type="submit">Enviar mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            
             </section>
 
-        </div>
+       
     
   
     <footer></footer>

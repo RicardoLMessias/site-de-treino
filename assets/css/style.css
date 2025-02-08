@@ -322,75 +322,146 @@ section {
     color: white;
 }
 
-/* .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 80%;
-    width: 600px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    transform: scale(0.8);
-    transition: transform 0.3s ease-in-out;
-}
-
-.modal iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-
-.close {
-    color: red;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-}
-
-
-.modal.show {
-    display: flex;
-    opacity: 1;
-}
-
-.modal.show .modal-content {
-    transform: scale(1);
-} */
-
-
-
-
 
 #contato { 
     width: 100%;
     display: flex;
-    background-color: #666; 
+    flex-direction: column;
+    background-color: #fff; 
+    
 }
 
+.contato__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 
+.contato__content__corpo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
 
+.contato__content__esquerdo{
+    width: 40%;
+}
 
+.contato__content__esquerdo__texto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
 
+.contato__content__esquerdo__texto p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+.contato__content__esquerdo__texto h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 10px;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.contato__content__esquerdo__texto h1 strong{
+    color: red;
+}
+
+.contato__content__esquerdo__texto h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color:#2c2c2c
+}
+
+.contato__content__esquerdo__texto h2 strong{
+    font-weight: 900;
+}
+
+.contato__content__esquerdo__redes {
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    width: 35%;
+    padding: 2px 0;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff0000;
+    justify-content: center;
+    gap: 16px;
+    transition: background-color 0.5s ease;
+    align-items: center;
+    margin-top: 3%;
+    border: 2px solid white;
+    transition: color 0.5s ease, background-color 0.5s ease, border 0.5s ease;
+}
+.contato__content__esquerdo__redes:hover{
+    background-color: #000;
+    border: 2px solid red;
+}
+
+.contato__content__direito{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    width: 40%;
+}
+
+.contato__content__direito form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-left: 10%;  
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__content__direito form input{
+    width: 100%;
+    height: 40px;
+    padding-left:  20px;
+    border-radius: 5px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+}
+
+.contato__content__direito form textarea{
+    width: 100%;
+    height: 150px;
+    padding-left:  20px;
+    border-radius: 5px;
+    border: 2px solid;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+}
+.contato__content__direito form button{
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    width: 70%;
+    border: 2px solid white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+.contato__content__direito form button:hover{
+    background-color: #ffffff;
+    color: rgb(14, 14, 14);
+    border: 2px solid rgb(255, 0, 0);
+}
 
 @media (max-width:1200px){
     /* menu */
