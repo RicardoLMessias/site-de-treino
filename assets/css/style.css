@@ -385,6 +385,10 @@ section {
     font-weight: 900;
 }
 
+.redes {
+    display: flex;
+}
+
 .contato__content__esquerdo__redes {
     display: flex;
     font-family: 'Space Grotesk', sans-serif;
@@ -430,20 +434,22 @@ section {
 .contato__content__direito form input{
     width: 100%;
     height: 40px;
-    padding-left:  20px;
+    padding-left:  10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .contato__content__direito form textarea{
     width: 100%;
     height: 150px;
-    padding-left:  20px;
+    padding-left:  10px;
+    padding-top: 10px;
     border-radius: 5px;
-    border: 2px solid;
+    border: 1px solid #ccc;
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
 }
 .contato__content__direito form button{
     background-color: #ff0000;
@@ -463,6 +469,34 @@ section {
     border: 2px solid rgb(255, 0, 0);
 }
 
+
+
+
+
+footer{
+    width: 100%;
+    height: 260px;
+    background-color: #000;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35%;
+}
+
+.logo__footer{
+
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+
+.texto__footer{
+
+}
 @media (max-width:1200px){
     /* menu */
     .topbar{
@@ -504,7 +538,7 @@ section {
 
     .about__conteudo{
         width: 90%;
-        height: 50%;    
+        height: 65%;    
     }
     .about__paragrafo {
         margin-top: 9%;
@@ -515,9 +549,55 @@ section {
         grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(4, 80px); 
     }
+
     .portfolio__botao{
-       
         line-height: 80px; 
-       
+    }
+
+    /* pagina contato */
+    .contato__content__corpo{
+        flex-direction: column;
+    }
+
+    .contato__content__esquerdo{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .contato__content__esquerdo__texto{
+        gap: 5px;
+    }
+
+    .contato__content__esquerdo__texto h1{
+        text-align: center;
+        letter-spacing: 6px;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .contato__content__esquerdo__texto h2 {
+
+        font-size: 1rem;
+
+    }
+
+    .contato__content__esquerdo__redes {
+        font-size: 1.2rem;
+        text-decoration: none;
+        gap: 4px;
+    }
+
+    .contato__content__direito{
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        width: 90%;
+    }
+
+    .contato__content__direito form{
+        margin-left: 10%;
+    }
+    footer{
+        flex-direction: column;
+        gap: 10%;
     }
 }
