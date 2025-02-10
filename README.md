@@ -4,7 +4,7 @@
  ### Bem vindo ao meu projeto Portfólio pessoal.
   Nesse projeto estou trazendo todo o conteúdo estudado recentemente de HTML, CSS e Javascript.
   
-  Esse projeto consiste em algumas funcionalidades e aperfeiçoamento com inteligencia artificial.
+  Esse projeto consiste em algumas funcionalidades, animações com CSS e Javascript e aperfeiçoamento com inteligencia artificial.
   
   Criei um site Portfólio responsivo sem frameworks, utilizando apenas HTML, CSS e Javascript.
   
