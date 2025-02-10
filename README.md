@@ -29,7 +29,7 @@
 
 # Link 
 
-Aqui esta um link do vercel para visualização [Site treino](https://meu-site-treino-psi.vercel.app/)
+Aqui esta um link do vercel para visualização <a href="https://meu-site-treino-psi.vercel.app/" target="_blank">Site treino</a> 
 
 ## Autor
 
