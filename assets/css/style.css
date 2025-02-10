@@ -65,7 +65,7 @@ header{
 .content {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y proximity; /* Faz o snap vertical obrigatório */
+    
 }
 
 /* Seções */

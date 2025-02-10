@@ -22,7 +22,7 @@ let observer = new IntersectionObserver(entries => {
         }
     });
 }, {
-    threshold: 0.9 // Define que 60% da seção precisa estar visível para ativar
+    threshold: 0.6 // Define que 60% da seção precisa estar visível para ativar
 });
 
 
