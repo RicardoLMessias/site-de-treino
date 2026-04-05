@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Preencha todos os campos corretamente!");
     }
 
-    $para = "seuemail@exemplo.com";  // Substitua pelo seu e-mail real
+    $para = "ricardo.lima.messias@gmail.com";  
     $assunto = "Novo contato do site";
     $corpo = "Nome: $nome\nE-mail: $email\nMensagem:\n$mensagem";
 
